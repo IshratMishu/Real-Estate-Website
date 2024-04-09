@@ -5,7 +5,7 @@
         "segment_name": "Villa",
         "description": "Experience unparalleled luxury in this stunning oceanfront villa with breathtaking views and lavish amenities. This elegant residence features spacious living areas, high-end finishes, and direct access to a private beach.",
         "price": "$5,000,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "5000 sq ft",
         "location": "102 Hauptstraße, Berlin, Germany, 10115",
         "facilities": [
@@ -25,7 +25,7 @@
         "segment_name": "Private Island",
         "description": "Escape to your own private paradise on this exclusive island retreat, surrounded by pristine beaches and lush landscapes. This one-of-a-kind property offers ultimate seclusion and luxury, with multiple villas, recreational facilities, and stunning natural surroundings.",
         "price": "$10,000,000",
-        "status": "rent",
+        "status": "Rent",
         "area": "10 acres",
         "location": "77 Broadway, Brooklyn, New York, NY 11249",
         "facilities": [
@@ -44,7 +44,7 @@
         "segment_name": "Beachfront Property",
         "description": "Live in unparalleled luxury in this exquisite beachfront mansion, boasting opulent interiors and stunning ocean views. This grand estate features multiple living areas, a gourmet kitchen, expansive outdoor spaces, and a private dock for yachts.",
         "price": "$7,500,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "8000 sq ft",
         "location": "512 Orange Street, Orlando, Florida, 32801",
         "facilities": [
@@ -64,7 +64,7 @@
         "segment_name": "Penthouse",
         "description": "Indulge in the epitome of urban luxury living in this prestigious penthouse offering panoramic city views and unparalleled elegance. This sophisticated residence boasts floor-to-ceiling windows, designer finishes, and exclusive access to a rooftop terrace.",
         "price": "$3,500,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "3000 sq ft",
         "location": "3015 Stillwell Avenue, Bronx, New York, NY 10461",
         "facilities": [
@@ -85,7 +85,7 @@
         "segment_name": "Mansion",
         "description": "Retreat to serenity in this secluded mountain estate, surrounded by majestic peaks and pristine wilderness. This custom-built home offers rustic elegance with modern amenities, including a gourmet kitchen, home theater, and expansive outdoor living spaces.",
         "price": "$6,500,000",
-        "status": "rent",
+        "status": "Rent",
         "area": "6000 sq ft",
         "location": "14 Baker Street, London, United Kingdom, W1U 8ED",
         "facilities": [
@@ -105,7 +105,7 @@
         "segment_name": "Resort",
         "description": "Experience the ultimate in luxury resort living in this stunning villa nestled within a prestigious beachfront resort. This impeccably designed villa features open-concept living spaces, private gardens, and access to world-class resort amenities.",
         "price": "$2,000,000",
-        "status": "rent",
+        "status": "Rent",
         "area": "4000 sq ft",
         "location": "27 Rue de la Liberté, Paris, France, 75001",
         "facilities": [
@@ -125,7 +125,7 @@
         "segment_name": "Mansion",
         "description": "Own a piece of paradise with this exclusive mansion featuring a private beach, luxurious amenities, and unparalleled privacy. This grand estate offers opulent living spaces, a gourmet kitchen, expansive outdoor entertaining areas, and breathtaking views of the Mediterranean Sea.",
         "price": "$12,000,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "12,000 sq ft",
         "location": "8 Bahnhofstraße, Zurich, Switzerland, 8001",
         "facilities": [
@@ -145,7 +145,7 @@
         "segment_name": "Mansion",
         "description": "Escape to tranquility in this luxurious lakeside retreat offering serene views and impeccable craftsmanship. This elegant estate boasts high ceilings, custom millwork, and expansive windows showcasing panoramic lake views.",
         "price": "$4,500,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "5500 sq ft",
         "location": "3 Via Roma, Rome, Italy, 00184",
         "facilities": [
@@ -165,7 +165,7 @@
         "segment_name": "Villa",
         "description": "Perched atop a cliff, this stunning villa offers breathtaking views of the ocean below and luxurious amenities for a truly indulgent lifestyle. This architectural masterpiece features sleek modern design, expansive glass walls, and seamless indoor-outdoor living spaces.",
         "price": "$8,000,000",
-        "status": "sale",
+        "status": "Sale",
         "area": "7000 sq ft",
         "location": "5 Rua do Carmo, Lisbon, Portugal, 1200-093",
         "facilities": [

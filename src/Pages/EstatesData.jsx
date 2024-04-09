@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import { MdOutlineLocationOn } from "react-icons/md";
 
 
 const EstatesData = ({ estate }) => {
@@ -12,9 +13,9 @@ const EstatesData = ({ estate }) => {
       <figure className="w-auto relative"><img src={image} alt="car!"/>
       <div className="badge badge-secondary badge-lg p-4 absolute right-5 top-14">{status}</div>
       </figure>
-      <div className="card-body">
+      <div className="card-body space-y-3">
         <h2 className="card-title">{estate_title}</h2>
-        <small>{location}</small>
+        <small className="flex items-center gap-1"><MdOutlineLocationOn /> {location}</small>
         <div className="overflow-x-auto">
           <table className="table table-zebra">
             <tbody>
