@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 
 const EstatesData = ({ estate }) => {
-  const { image, estate_title, id, location, status } = estate;
+  const { image, estate_title, id, location, status, segment_name, year_built, area, price } = estate;
 
 
   return (
 
     <div className="card glass">
       <figure className="w-auto relative"><img src={image} alt="car!"/>
-      <div className="badge badge-secondary badge-lg absolute right-5 top-14">{status}</div>
+      <div className="badge badge-secondary badge-lg p-4 absolute right-5 top-14">{status}</div>
       </figure>
       <div className="card-body">
         <h2 className="card-title">{estate_title}</h2>
@@ -18,20 +18,21 @@ const EstatesData = ({ estate }) => {
         <div className="overflow-x-auto">
           <table className="table table-zebra">
             <tbody>
-              {/* row 1 */}
               <tr>
-                <td>Cy Ganderton</td>
-                <td>Quality Control Specialist</td>
+                <td>Segment</td>
+                <td>{segment_name}</td>
               </tr>
-              {/* row 2 */}
               <tr>
-                <td>Hart Hagerty</td>
-                <td>Desktop Support Technician</td>
+                <td>Price</td>
+                <td>{price}</td>
               </tr>
-              {/* row 3 */}
               <tr>
-                <td>Brice Swyre</td>
-                <td>Tax Accountant</td>
+                <td>Built Year</td>
+                <td>{year_built}</td>
+              </tr>
+              <tr>
+                <td>Area</td>
+                <td>{area}</td>
               </tr>
             </tbody>
           </table>
