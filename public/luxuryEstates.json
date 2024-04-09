@@ -1,0 +1,181 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Oceanfront Luxury Villa",
+        "segment_name": "Villa",
+        "description": "Experience unparalleled luxury in this stunning oceanfront villa with breathtaking views and lavish amenities. This elegant residence features spacious living areas, high-end finishes, and direct access to a private beach.",
+        "price": "$5,000,000",
+        "status": "sale",
+        "area": "5000 sq ft",
+        "location": "102 Hauptstraße, Berlin, Germany, 10115",
+        "facilities": [
+            "Infinity Pool",
+            "Spa",
+            "Home Theater"
+        ],
+        "image": "https://i.ibb.co/724v2Z1/73173bb3c714513fbefd18e58e9bbd8a.jpg",
+        "bedrooms": 5,
+        "bathrooms": 3,
+        "garage": 3,
+        "year_built": 2010
+    },
+    {
+        "id": 2,
+        "estate_title": "Private Island Retreat",
+        "segment_name": "Private Island",
+        "description": "Escape to your own private paradise on this exclusive island retreat, surrounded by pristine beaches and lush landscapes. This one-of-a-kind property offers ultimate seclusion and luxury, with multiple villas, recreational facilities, and stunning natural surroundings.",
+        "price": "$10,000,000",
+        "status": "rent",
+        "area": "10 acres",
+        "location": "77 Broadway, Brooklyn, New York, NY 11249",
+        "facilities": [
+            "Beachfront Cabanas",
+            "Tennis Court",
+            "Helipad"
+        ],
+        "image": "https://i.ibb.co/tDk5TsR/pexels-photo-3293192.jpg",
+        "bedrooms": 10,
+        "bathrooms": 6,
+        "year_built": 2005
+    },
+    {
+        "id": 3,
+        "estate_title": "Luxurious Beachfront Mansion",
+        "segment_name": "Beachfront Property",
+        "description": "Live in unparalleled luxury in this exquisite beachfront mansion, boasting opulent interiors and stunning ocean views. This grand estate features multiple living areas, a gourmet kitchen, expansive outdoor spaces, and a private dock for yachts.",
+        "price": "$7,500,000",
+        "status": "sale",
+        "area": "8000 sq ft",
+        "location": "512 Orange Street, Orlando, Florida, 32801",
+        "facilities": [
+            "Private Dock",
+            "Gym",
+            "Wine Cellar"
+        ],
+        "image": "https://i.ibb.co/rMrm0kM/pexels-photo-8143671.jpg",
+        "bedrooms": 6,
+        "bathrooms": 4,
+        "garage": 1,
+        "year_built": 2015
+    },
+    {
+        "id": 4,
+        "estate_title": "Luxury Penthouse with City Views",
+        "segment_name": "Penthouse",
+        "description": "Indulge in the epitome of urban luxury living in this prestigious penthouse offering panoramic city views and unparalleled elegance. This sophisticated residence boasts floor-to-ceiling windows, designer finishes, and exclusive access to a rooftop terrace.",
+        "price": "$3,500,000",
+        "status": "sale",
+        "area": "3000 sq ft",
+        "location": "3015 Stillwell Avenue, Bronx, New York, NY 10461",
+        "facilities": [
+            "Private Terrace",
+            "Concierge Service",
+            "Fitness Center"
+        ],
+        "image": "https://i.ibb.co/qyLx10c/f85e816f2ed0d572285f39c1890064da.jpg",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "garage": 1,
+        "garden": 1,
+        "year_built": 2018
+    },
+    {
+        "id": 5,
+        "estate_title": "Secluded Mountain Retreat",
+        "segment_name": "Mansion",
+        "description": "Retreat to serenity in this secluded mountain estate, surrounded by majestic peaks and pristine wilderness. This custom-built home offers rustic elegance with modern amenities, including a gourmet kitchen, home theater, and expansive outdoor living spaces.",
+        "price": "$6,500,000",
+        "status": "rent",
+        "area": "6000 sq ft",
+        "location": "14 Baker Street, London, United Kingdom, W1U 8ED",
+        "facilities": [
+            "Ski-in/Ski-out Access",
+            "Outdoor Hot Tub",
+            "Home Theater"
+        ],
+        "image": "https://i.ibb.co/gMnVVrF/free-photo-of-symmetrical-image-of-a-residential-building-with-columns-and-a-garden-with-green-lawn.jpg",
+        "bedrooms": 4,
+        "bathrooms": 6,
+        "garden": 3,
+        "year_built": 2012
+    },
+    {
+        "id": 6,
+        "estate_title": "Luxury Resort Villa",
+        "segment_name": "Resort",
+        "description": "Experience the ultimate in luxury resort living in this stunning villa nestled within a prestigious beachfront resort. This impeccably designed villa features open-concept living spaces, private gardens, and access to world-class resort amenities.",
+        "price": "$2,000,000",
+        "status": "rent",
+        "area": "4000 sq ft",
+        "location": "27 Rue de la Liberté, Paris, France, 75001",
+        "facilities": [
+            "Private Pool",
+            "Tennis Court",
+            "Five-Star Resort Amenities"
+        ],
+        "image": "https://i.ibb.co/N7HqsnP/pexels-photo-3209055.jpg",
+        "bedrooms": 5,
+        "bathroom": 4,
+         "garden": 2,
+        "year_built": 2016
+    },
+    {
+        "id": 7,
+        "estate_title": "Exclusive Mansion with Private Beach",
+        "segment_name": "Mansion",
+        "description": "Own a piece of paradise with this exclusive mansion featuring a private beach, luxurious amenities, and unparalleled privacy. This grand estate offers opulent living spaces, a gourmet kitchen, expansive outdoor entertaining areas, and breathtaking views of the Mediterranean Sea.",
+        "price": "$12,000,000",
+        "status": "sale",
+        "area": "12,000 sq ft",
+        "location": "8 Bahnhofstraße, Zurich, Switzerland, 8001",
+        "facilities": [
+            "Private Beach Access",
+            "Infinity Pool",
+            "Wine Cellar"
+        ],
+        "image": "https://i.ibb.co/PT1p8Kv/oceanfront-mansion-hillsboro-mile-2.jpg",
+        "bedrooms": 8,
+        "bathrooms": 5,
+        "garage": 5,
+        "year_built": 2008
+    },
+    {
+        "id": 8,
+        "estate_title": "Luxury Lakeside Retreat",
+        "segment_name": "Mansion",
+        "description": "Escape to tranquility in this luxurious lakeside retreat offering serene views and impeccable craftsmanship. This elegant estate boasts high ceilings, custom millwork, and expansive windows showcasing panoramic lake views.",
+        "price": "$4,500,000",
+        "status": "sale",
+        "area": "5500 sq ft",
+        "location": "3 Via Roma, Rome, Italy, 00184",
+        "facilities": [
+            "Boat Dock",
+            "Infinity Pool",
+            "Sauna"
+        ],
+        "image": "https://i.ibb.co/tsZvjGG/pexels-max-vakhtbovycn-7061676.jpg",
+        "bedrooms": 6,
+        "bathrooms": 6,
+        "garage": 2,
+        "year_built": 2014
+    },
+    {
+        "id": 9,
+        "estate_title": "Stunning Cliffside Villa",
+        "segment_name": "Villa",
+        "description": "Perched atop a cliff, this stunning villa offers breathtaking views of the ocean below and luxurious amenities for a truly indulgent lifestyle. This architectural masterpiece features sleek modern design, expansive glass walls, and seamless indoor-outdoor living spaces.",
+        "price": "$8,000,000",
+        "status": "sale",
+        "area": "7000 sq ft",
+        "location": "5 Rua do Carmo, Lisbon, Portugal, 1200-093",
+        "facilities": [
+            "Clifftop Infinity Pool",
+            "Private Terrace",
+            "Wine Cellar"
+        ],
+        "image": "https://i.ibb.co/PxcqVR4/pexels-photo-261204.jpg",
+        "bedrooms": 5,
+        "bathrooms": 3,
+        "year_built": 2019
+    }
+]
