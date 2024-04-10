@@ -16,7 +16,7 @@ const Navbar = () => {
 
         <li><NavLink to='/' style={linkStyle}>Home</NavLink></li>
         <li><NavLink to='/gallery' style={linkStyle}>Gallery</NavLink></li>
-        <li><NavLink to='/profile' style={linkStyle}>Blogs</NavLink></li>
+        <li><NavLink to='/blogs' style={linkStyle}>Blogs</NavLink></li>
 
 
         <li><NavLink to='/dashboard' style={linkStyle}>Luxury Lifestyle Magazine</NavLink></li>
