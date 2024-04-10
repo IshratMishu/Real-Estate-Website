@@ -13,6 +13,7 @@ import './styles.css';
 
 
 import { Autoplay, Parallax, Pagination, Navigation } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
     <>
@@ -50,6 +51,7 @@ const Banner = () => {
               From sleek architectural features to expansive windows framing panoramic vistas, immerse yourself in a world of unparalleled elegance and sophistication.
             </p>
           </div>
+          <Link to="/gallery"><button className="btn btn-primary mt-2">View in Gallery</button></Link>
         </SwiperSlide>
 
         <SwiperSlide style={{
