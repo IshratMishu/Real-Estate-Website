@@ -6,6 +6,7 @@ import { useLoaderData } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { PiDotsThreeOutlineFill } from "react-icons/pi";
 import 'animate.css';
+import LandSupport from "../../Pages/LandSupport";
 
 
 const Home = () => {
@@ -39,6 +40,7 @@ const Home = () => {
                     showAll ? luxuryCards.map(estate => <EstatesData key={estate.id} estate={estate}></EstatesData>) : luxuryCards.slice(0, 6).map(estate => <EstatesData key={estate.id} estate={estate}></EstatesData>)
                 }
             </div>
+            <LandSupport></LandSupport>
         </div>
     );
 };
