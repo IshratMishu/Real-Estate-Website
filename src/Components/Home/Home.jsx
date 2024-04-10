@@ -7,6 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { PiDotsThreeOutlineFill } from "react-icons/pi";
 import 'animate.css';
 import LandSupport from "../../Pages/LandSupport";
+import About from "../../Pages/About";
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
     return (
         <div className="mt-24 font-poppins">
             <Banner></Banner>
+            <About></About>
             <div className="mt-32">
                 <div className="flex justify-between mt-32">
                     <h1 className="text-4xl font-semibold">Our Newest Properties</h1>
