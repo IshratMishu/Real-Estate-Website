@@ -2,6 +2,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const LandSupport = () => {
     useEffect(() => {
@@ -22,7 +23,7 @@ const LandSupport = () => {
                     <li className='flex gap-1 items-center'><FaCheckCircle /> Free submission on our website</li>
                     <li className='flex gap-1 items-center'><FaCheckCircle /> Expert legal guidance</li>
                 </ul>
-                <button className="btn btn-primary font-bold text-lg ">Contact Us</button>
+                <Link to="/contact"><button className="btn btn-primary font-bold text-lg mt-4">Contact Us</button></Link>
             </div>
 
 

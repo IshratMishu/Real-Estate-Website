@@ -4,6 +4,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Components/Home/Home";
 import EstatesDetail from "../Pages/EstatesDetail";
 import Gallery from "../Pages/Gallery";
+import Blogs from "../Pages/Blogs";
 
 const Router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const Router = createBrowserRouter([
         {
           path: "/gallery",
           element: <Gallery></Gallery>
+        },
+        {
+          path: "/blogs",
+          element: <Blogs></Blogs>
         }
       ],
     },
