@@ -9,11 +9,11 @@ const EstatesData = ({ estate }) => {
 
   return (
 
-    <div className="card glass">
+    <div className="card glass shadow-gray-400 shadow-md">
     <figure className="w-auto relative"><img src={image} alt="car!"/>
-    <div className="badge badge-secondary badge-lg p-4 absolute right-5 top-14">{status}</div>
+    <div className="badge badge-secondary text-white badge-lg p-4 absolute right-5 top-14">{status}</div>
     </figure>
-    <div className="card-body space-y-3">
+    <div className="card-body space-y-3 text-white">
       <h2 className="card-title">{estate_title}</h2>
     
       <div className="flex flex-col flex-grow">
@@ -43,7 +43,7 @@ const EstatesData = ({ estate }) => {
         </table>
       </div>
       <div className="card-actions justify-end flex flex-col flex-grow">
-        <Link to={`/luxuryEstates/${id}`}><button className="btn btn-outline ml-20">View Property</button></Link>
+        <Link to={`/luxuryEstates/${id}`}><button className="btn btn-primary font-bold ml-20">View Property</button></Link>
       </div>
     </div>
   </div>

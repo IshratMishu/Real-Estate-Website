@@ -29,8 +29,8 @@ const Home = () => {
             <About></About>
             <div className="mt-32">
                 <div className="flex justify-between mt-32">
-                    <h1 className="text-4xl font-semibold">Our Newest Properties</h1>
-                    {!showAll && (<button onClick={handleSeeAll} className="flex items-center font-medium animate__animated animate__headShake animate__infinite">See All <IoIosArrowForward className=" font-bold text-accent" /></button>)}
+                    <h1 className="text-2xl md:text-4xl font-semibold text-white">Our Newest Properties</h1>
+                    {!showAll && (<button onClick={handleSeeAll} className="flex items-center font-medium animate__animated animate__headShake animate__infinite text-white">See All <IoIosArrowForward className="font-bold text-white" /></button>)}
                 </div>
                 <PiDotsThreeOutlineFill className="text-3xl text-gray-300" />
             </div>

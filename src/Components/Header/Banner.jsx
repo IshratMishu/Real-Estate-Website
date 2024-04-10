@@ -1,65 +1,83 @@
+
+
+import mansion from '../../assets/mansion1.jpeg'
+import sat from '../../assets/123.jpg'
+import era from '../../assets/house-2469110_1280.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './styles.css';
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
+import { Autoplay, Parallax, Pagination, Navigation } from 'swiper/modules';
 const Banner = () => {
   return (
-    <div>
+    <>
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+        }}
         autoplay={{
-          delay: 3000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
+        speed={600}
+        parallax={true}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Parallax, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className='flex relative'>
-            <div className='absolute left-2 top-2 lg:left-14 lg:top-1/3 md:left-14 md:top-1/4'>
-              <h2 className='text-xs md:text-lg lg:text-2xl font-bold'>Experience Luxury Like Never Before</h2>
-              <p className='text-xs md:text-lg font-medium mt-1 md:mt-4'>Step into Timeless Elegance with <br /> Our <span className='font-bold text-xs md:text-xl'>Grand Mansions</span>, <br /> Where Luxury Meets Sophistication <br />in Sprawling Grounds of Opulence.</p>
-              <button className='btn btn-xs md:btn-md '>Explore Now</button>
-            </div>
-            <div className=''>
-              <img className='' src="/src/assets/mansion.png" alt="" />
-            </div>
+        <div
+          slot="container-start" className="parallax-bg" data-swiper-parallax="-23%"></div>
+        <SwiperSlide style={{
+          backgroundImage: `url(${sat})`,
+        }}>
+          <div className="title font-medium text-lg md:text-4xl" data-swiper-parallax="-300" >
+            Modern Luxury Penthouse Living
+          </div>
+          <div className="subtitle card glass rounded-none text-sm md:text-xl" data-swiper-parallax="-200">
+            <p>Elevate your lifestyle with cutting-edge design and breathtaking views.</p>
+          </div>
+          <div className="text card glass rounded-none p-2 mt-3 md:max-w-[400px] text-sm" data-swiper-parallax="-100">
+            <p>
+              From sleek architectural features to expansive windows framing panoramic vistas, immerse yourself in a world of unparalleled elegance and sophistication.
+            </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className='flex relative'>
-            <div className='absolute left-2 top-2 md:left-14 md:top-1/3'>
-              <h2 className='text-base md:text-3xl font-bold'>MODERN RESORT</h2>
-              <h4 className='text-sm font-semibold'>FOR SALE</h4>
-              <p className='mt-1 md:mt-4 text-base font-semibold'>Find your Property</p>
-              <button className='btn btn-sm md:btn-md md:mt-2'>Book Now</button>
-            </div>
-            <div><img src="/src/assets/resort.png" alt="" /></div>
+
+        <SwiperSlide style={{
+          backgroundImage: `url(${mansion})`
+        }}>
+          <div className="title card glass rounded-none font-medium text-lg md:text-4xl p-2" data-swiper-parallax="-300">
+            Tranquil Haven: Your Ideal Retreat
+          </div>
+          <div className="text card glass rounded-none p-2 mt-3 text-sm md:max-w-lg md:text-lg" data-swiper-parallax="-100">
+            <p>
+              Step into a realm of unparalleled luxury with this magnificent mansion, where opulence intertwines seamlessly with timeless elegance.
+            </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <div className='flex relative'>
-            <div>
-              <h2 className='text-sm lg:text-4xl md:text-2xl font-bold absolute left-24 top-2 lg:left-96 lg:top-10 md:left-60 md:top-7'>Beachfront Properties</h2>
-            </div>
-            <div><img src="/src/assets/beach.png" alt="" /></div>
+
+        <SwiperSlide style={{
+          backgroundImage: `url(${era})`
+        }}>
+          <div className="text card glass rounded-none p-5 mt-52 md:mt-72 md:max-w-xl text-sm md:text-lg" data-swiper-parallax="-200">
+            The epitome of elegance and luxury, this villa offers a haven of tranquility amidst breathtaking surroundings.
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="/src/assets/Modern Luxury Penthouse Living.png" alt="" />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </>
   );
 };
 
 export default Banner;
+
+
+

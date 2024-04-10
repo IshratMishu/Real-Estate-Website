@@ -5,8 +5,8 @@ const Navbar = () => {
     const linkStyle = ({ isActive }) => {
         return {
             fontWeight: isActive ? "bold" : "",
-            color: isActive ? "red" : "black",
-            background: isActive ? "none" : "white",
+            color: isActive ? "#86efac" : "",
+            background: isActive ? "none" : "none",
             fontSize: isActive ? "18px" : "18px"
         };
     };
@@ -15,7 +15,6 @@ const Navbar = () => {
     const links = <>
 
         <li><NavLink to='/' style={linkStyle}>Home</NavLink></li>
-        <li><NavLink to='/login' style={linkStyle}>Properties</NavLink></li>
         <li><NavLink to='/register' style={linkStyle}>Gallery</NavLink></li>
         <li><NavLink to='/profile' style={linkStyle}>Blogs</NavLink></li>
 
@@ -26,7 +25,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-base-100 fixed top-0 left-0 w-full z-10">
+        <div className="navbar bg-base-100 fixed top-0 left-0 w-full z-10 p-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,7 +35,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-2xl">LuxVista</a>
+                <a className="btn btn-ghost text-2xl md:text-3xl">LuxVista</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -44,7 +43,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn">Login</button>
+                <button className="btn btn-primary font-bold">Login</button>
             </div >
              <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">

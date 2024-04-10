@@ -22,7 +22,7 @@ const LandSupport = () => {
                     <li className='flex gap-1 items-center'><FaCheckCircle /> Free submission on our website</li>
                     <li className='flex gap-1 items-center'><FaCheckCircle /> Expert legal guidance</li>
                 </ul>
-                <button className="btn">Contact Us</button>
+                <button className="btn btn-primary font-bold text-lg ">Contact Us</button>
             </div>
 
 
