@@ -71,7 +71,7 @@ const Banner = () => {
         <SwiperSlide style={{
           backgroundImage: `url(${era})`
         }}>
-          <div className="text card glass bg-gray-400 rounded-none p-5 mt-52 md:mt-5 md:max-w-xl text-sm md:text-lg" data-swiper-parallax="-200">
+          <div className="text card glass bg-gray-400 rounded-none p-5 mt-10 md:mt-5 md:max-w-xl text-sm md:text-lg" data-swiper-parallax="-200">
             The epitome of elegance and luxury, this villa offers a haven of tranquility amidst breathtaking surroundings.
           </div>
           <Link to="/gallery"><button className="btn btn-primary mt-2">View in Gallery</button></Link>

@@ -28,11 +28,11 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <div className="mt-32">
-                <div className="flex justify-between mt-32">
+                <div className="flex justify-between mt-32 p-4">
                     <h1 className="text-2xl md:text-4xl font-semibold text-white">Our Newest Properties</h1>
                     {!showAll && (<button onClick={handleSeeAll} className="flex items-center font-medium animate__animated animate__headShake animate__infinite text-white">See All <IoIosArrowForward className="font-bold text-white" /></button>)}
                 </div>
-                <PiDotsThreeOutlineFill className="text-3xl text-gray-300" />
+                <p className="px-4"><PiDotsThreeOutlineFill className="text-3xl text-gray-300" /></p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10 ">
                 {loading ? (
