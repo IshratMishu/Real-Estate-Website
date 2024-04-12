@@ -7,6 +7,8 @@ import Gallery from "../Pages/Gallery";
 import Blogs from "../Pages/Blogs";
 import Login from "../Components/Login/Login";
 import Registration from "../Components/Registration/Registration";
+import PrivateRoutes from "./PrivateRoutes";
+// import EditProfile from "../Pages/EditProfile";
 
 const Router = createBrowserRouter([
     {
@@ -21,12 +23,12 @@ const Router = createBrowserRouter([
         },
         {
           path: "/luxuryEstates/:id",
-          element: <EstatesDetail></EstatesDetail>,
+          element: <PrivateRoutes><EstatesDetail></EstatesDetail></PrivateRoutes>,
           loader: () => fetch('/luxuryEstates.json')
         },
         {
           path: "/gallery",
-          element: <Gallery></Gallery>
+          element: <PrivateRoutes><Gallery></Gallery></PrivateRoutes>
         },
         {
           path: "/blogs",
@@ -39,7 +41,11 @@ const Router = createBrowserRouter([
         {
           path: "/registration",
           element: <Registration></Registration>
-        }
+        },
+        // {
+        //   path: "/editProfile",
+        //   element: <PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>
+        // }
       ],
     },
   ]);

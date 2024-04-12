@@ -1,29 +1,34 @@
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../Hooks/useAuth";
 
 
 const Registration = () => {
-    const {createUser, profileUpdate} = useAuth();
-
-    // hook form
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-      } = useForm();
+    const { createUser, updateUserProfile } = useAuth();
     
-      const onSubmit = (data) => {
-        const{email, password, name, photo} = data;
-        createUser(email, password)
-        .then(result =>{
-            profileUpdate(name, photo)
-            .then(()=>{
-                console.log(result);
-            })   
-        })
-      }
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  // navigation systems
+  const navigate = useNavigate();
+  const from = "/";
+
+  const onSubmit = (data) => {
+      const { email, password, image, fullName } = data;
+      
+      //create user and update profile
+      createUser(email, password)
+          .then(() => {
+              updateUserProfile(fullName, image)
+                  .then(() => {
+                        navigate(from);
+      });
+    });
+  };
       
 
     

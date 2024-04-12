@@ -13,12 +13,12 @@ import About from "../../Pages/About";
 const Home = () => {
     const luxuryCards = useLoaderData();
     const [showAll, setShowAll] = useState(false);
-    const [loading, setLoading] = useState(false);
+    const [loader, setLoader] = useState(false);
 
     const handleSeeAll = () => {
-        setLoading(true);
+        setLoader(true);
         setTimeout(() => {
-            setLoading(false);
+            setLoader(false);
             setShowAll(true);
         }, 2000);
     }
@@ -35,7 +35,7 @@ const Home = () => {
                 <p className="px-4"><PiDotsThreeOutlineFill className="text-3xl text-gray-300" /></p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10 ">
-                {loading ? (
+                {loader ? (
                     <span className="loading loading-spinner loading-lg ml-40 lg:ml-[550px] md:ml-96"></span>
                 )
                     :

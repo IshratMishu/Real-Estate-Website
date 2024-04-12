@@ -10,64 +10,77 @@ export const AuthContext = createContext(null);
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
-const AuthProvider = ({children}) => {
-        const [user, setUser] = useState(null);
-console.log(user);
+const AuthProvider = ({ children }) => {
+    const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
 
 
-// create user
-const createUser = (email, password)=>{
-   return createUserWithEmailAndPassword(auth, email, password)
-}
+    // create user
+    const createUser = (email, password) => {
+        setLoading(true);
+        return createUserWithEmailAndPassword(auth, email, password)
+    }
+
+    // update user profile
+    const profileUpdate = (name, photo) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: photo
+        })
+    } 
 
 
-// sign in user
-const signInUser = (email, password)=>{
-    return signInWithEmailAndPassword(auth, email, password)
-}
+    // sign in user
+    const signInUser = (email, password) => {
+        setLoading(true);
+        return signInWithEmailAndPassword(auth, email, password)
+    }
 
-// Google Login
-const googleLogin =()=>{
-return signInWithPopup(auth, googleProvider)
-}
+    // Google Login
+    const googleLogin = () => {
+        setLoading(true);
+        return signInWithPopup(auth, googleProvider)
+    }
 
-// Github login
-const githubLogin = ()=>{
-    return signInWithPopup(auth, githubProvider)
-}
+    // Github login
+    const githubLogin = () => {
+        setLoading(true);
+        return signInWithPopup(auth, githubProvider)
+    }
+    
 
-// logout
-const logOut = ()=>{
-    setUser(null);
-    return signOut(auth)
-}
+    // logout
+    const logOut = () => {
+        return signOut(auth)
+    }
 
-// update user profile
-const profileUpdate =(name, photo)=>{
-    return updateProfile(auth.currentUser, {
-        displayName: name, 
-        photoURL: photo
-      })
-}
 
-// Observer
-useEffect(()=>{
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-          setUser(user);
-        } 
-      });
-},[])
+    // Observer
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user);
+                setLoading(false);
+            }
+             else {
+                setUser(null);
+                setLoading(false);
+            }
+        });
+        return () => unsubscribe();
+    }, []);
 
-const authInfo ={
-    createUser,
-    signInUser,
-    googleLogin,
-    githubLogin,
-    logOut,
-    user,
-    profileUpdate
-}
+
+    const authInfo = {
+        createUser,
+        loading,
+        signInUser,
+        googleLogin,
+        githubLogin,
+        logOut,
+        user,
+        profileUpdate
+    }
 
     return (
         <AuthContext.Provider value={authInfo}>
