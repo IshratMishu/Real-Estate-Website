@@ -8,7 +8,7 @@ import Blogs from "../Pages/Blogs";
 import Login from "../Components/Login/Login";
 import Registration from "../Components/Registration/Registration";
 import PrivateRoutes from "./PrivateRoutes";
-// import EditProfile from "../Pages/EditProfile";
+import EditProfile from "../Pages/EditProfile";
 
 const Router = createBrowserRouter([
     {
@@ -42,10 +42,10 @@ const Router = createBrowserRouter([
           path: "/registration",
           element: <Registration></Registration>
         },
-        // {
-        //   path: "/editProfile",
-        //   element: <PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>
-        // }
+        {
+          path: "/editProfile",
+          element: <PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>
+        }
       ],
     },
   ]);
