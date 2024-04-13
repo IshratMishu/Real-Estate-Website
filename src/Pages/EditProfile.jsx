@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import useAuth from "../Hooks/useAuth";
 import { useNavigate } from "react-router-dom";
-
 const ProfileDetails = () => {
   const { user, profileUpdate } = useAuth();
   const [formData, setFormData] = useState({
@@ -34,14 +33,9 @@ const ProfileDetails = () => {
     // Update user's profile information
     profileUpdate(formData.name, formData.photoURL)
       .then(() => {
-        // Handle success, if needed
-        console.log("Profile updated successfully");
+        // toast.success("Profile updated successfully");
         navigate("/");
       })
-      .catch((error) => {
-        // Handle error
-        console.error("Error updating profile:", error);
-      });
   };
 
   return (

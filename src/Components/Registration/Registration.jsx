@@ -13,11 +13,8 @@ const Registration = () => {
     const [passwordError, setPasswordError] = useState('');
     const [passwordSuccess, setPasswordSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-
-
-
+    const [showModal, setShowModal] = useState(false);
     const navigate = useNavigate();
-    const from = "/";
     const {
         register,
         handleSubmit,
@@ -26,14 +23,18 @@ const Registration = () => {
 
 
     const onSubmit = (data) => {
-
         const { email, password, image, fullName } = data;
 
         if (!/(?=.*[A-Z])(?=.*[a-z]).{6,}/.test(password)) {
             setPasswordError('Password must contain at least one uppercase letter (A-Z), one lowercase letter (a-z), and be at least 6 characters long.');
             return;
         } else {
-            setPasswordSuccess('Registration Successful')
+            setPasswordSuccess('Registration Successful!');
+            setShowModal(true);
+            setTimeout(() => {
+                setShowModal(false);
+                navigate('/login');
+            }, 2000);
         }
 
 
@@ -41,13 +42,8 @@ const Registration = () => {
         createUser(email, password)
             .then(() => {
                 updateUserProfile(fullName, image)
-                    .then(() => {
-                        navigate(from);
-                    });
             });
     };
-
-
 
 
     return (
@@ -97,15 +93,19 @@ const Registration = () => {
                             </span>
                             {errors.password && <span className="text-secondary">This field is required</span>}
                             {
-                                passwordError && <p className="text-red-600">{passwordError}</p>
+                                passwordError && <p className="text-secondary">{passwordError}</p>
                             }
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary font-bold text-lg">Register</button>
                         </div>
-                        {
-                            passwordSuccess && <p className="text-red-600">{passwordSuccess}</p>
-                        }
+                        {showModal && (
+                            <div className="fixed inset-0 flex items-center justify-center bg-gray-700 bg-opacity-75">
+                                <div className="bg-primary p-6 rounded-md shadow-white shadow-md">
+                                    <p className="text-black font-bold">{passwordSuccess}</p>
+                                </div>
+                            </div>
+                        )}
                         <p className="p-2">Already have an Account? <Link to="/login"><button className="btn btn-link text-lg">Please Login</button></Link></p>
                     </form>
                 </div>

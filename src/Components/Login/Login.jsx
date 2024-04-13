@@ -95,7 +95,7 @@ const Login = () => {
                             <button onClick={() => handleSocialLogin} className="btn btn-primary font-bold">Login</button>
                         </div>
                         {
-                            credentials && <span className="text-secondary">{credentials}</span>
+                            credentials && <small className="text-secondary">{credentials}</small>
                         }
                         <div className="card-text">
                             <p>New here? <Link to="/registration"><button className="btn btn-link">Create an Account</button></Link></p>
