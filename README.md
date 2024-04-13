@@ -4,7 +4,7 @@
 
 **Features and Characteristics of my
 Website:**
-- **High-Quality Visuals:** LuxVista, a platform *featuring a curated selection of **Luxury** Properties including Penthouses, Beachfront Residences, Resorts, Private Islands, Villas, and Mansions*, presents high-resolution images.Let LuxVista transport users to a world of luxury and exclusivity with every click..
+- **High-Quality Visuals:** --- LuxVista, a platform *featuring a curated selection of **Luxury** Properties including Penthouses, Beachfront Residences, Resorts, Private Islands, Villas, and Mansions*, presents high-resolution images.Let LuxVista transport users to a world of luxury and exclusivity with every click..
 
 - **Streamlined Navigation:**  This website features exclusive access routes, including **View Property** and **Gallery** , accessible only to signed-in users. Additionally, two 404 error routes, **Contact Us** and **About** , ensure smooth navigation. Engage effortlessly with our intuitive banner buttons **View in Gallery** & **Read Blogs** for seamless redirection to your desired destinations.
 
