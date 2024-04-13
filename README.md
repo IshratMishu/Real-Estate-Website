@@ -17,5 +17,7 @@ ___
 
 # npm Packages:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [AOS Package](https://www.npmjs.com/package/aos) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-  [AOS Package](https://www.npmjs.com/package/aos) for scrolling animation.
+-  [Animate.css](https://animate.style/) for css animations.
+-  [Swipper Slider](https://swiperjs.com/) for banner slides.
+-  [React Hook Form](https://react-hook-form.com/) for easy-to-use form validation.
