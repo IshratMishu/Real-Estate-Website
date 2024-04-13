@@ -72,3 +72,8 @@
 // };
 
 // export default EditProfile;
+
+
+{/* <Helmet>
+                <title>LuxVista - Home</title>
+            </Helmet> */}

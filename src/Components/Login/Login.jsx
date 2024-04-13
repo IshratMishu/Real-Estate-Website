@@ -3,10 +3,12 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../../Hooks/useAuth";
+import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
-
     const { signInUser, googleLogin, githubLogin } = useAuth();
+    const [credentials, setCredentials] = useState("");
 
     // hook form
     const {
@@ -23,6 +25,7 @@ const Login = () => {
 
     // Function to handle social login
     const handleSocialLogin = socialProvider => {
+
         socialProvider()
             .then(result => {
                 if (result.user) {
@@ -40,11 +43,17 @@ const Login = () => {
                 if (result.user) {
                     navigate(from);
                 }
+            })
+            .catch(() => {
+                setCredentials('Invalid Credentials! Please try again.');
             });
     };
 
     return (
         <div className="hero min-h-screen bg-base-100 mt-28 mb-14">
+            <Helmet>
+                <title>LuxVista - Login</title>
+            </Helmet>
             <div className="hero-content flex flex-col">
                 <div className="text-center">
                     <h1 className="text-3xl font-bold text-primary">Great to have you back!</h1>
@@ -85,6 +94,9 @@ const Login = () => {
                         <div className="form-control mt-6">
                             <button onClick={() => handleSocialLogin} className="btn btn-primary font-bold">Login</button>
                         </div>
+                        {
+                            credentials && <span className="text-secondary">{credentials}</span>
+                        }
                         <div className="card-text">
                             <p>New here? <Link to="/registration"><button className="btn btn-link">Create an Account</button></Link></p>
                         </div>

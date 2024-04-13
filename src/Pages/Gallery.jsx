@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 
 
 import { Pagination } from 'swiper/modules';
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -14,6 +15,9 @@ const Gallery = () => {
 
     return (
         <>
+            <Helmet>
+                <title>LuxVista - Gallery</title>
+            </Helmet>
             <Swiper
                 slidesPerView={3}
                 spaceBetween={2}

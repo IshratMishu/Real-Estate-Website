@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { PiSirenThin } from "react-icons/pi";
 import { MdOutlineRealEstateAgent } from "react-icons/md";
 import { HiOutlineMinus } from "react-icons/hi";
+import { Helmet } from "react-helmet-async";
 
 const EstatesDetail = () => {
   const estates = useLoaderData();
@@ -12,6 +13,9 @@ const EstatesDetail = () => {
 
   return (
     <div className="card bg-base-100 shadow-xl mt-28">
+      <Helmet>
+        <title>LuxVista - Property Details</title>
+      </Helmet>
       <figure className="px-10 pt-10">
         <img src={singleEstate.image} alt="Shoes" className="rounded-xl" />
       </figure>
@@ -19,7 +23,7 @@ const EstatesDetail = () => {
         <h2 className="card-title text-4xl text-white">{singleEstate.estate_title}</h2>
         <div className="flex gap-12 md:gap-96 text-lg">
           <p className="flex items-center gap-1"><MdOutlineRealEstateAgent /> {singleEstate.segment_name}</p>
-          <p className="flex items-center gap-1"><PiSirenThin className="animate__animated animate__shakeX"/> {singleEstate.status}</p>
+          <p className="flex items-center gap-1"><PiSirenThin className="animate__animated animate__shakeX" /> {singleEstate.status}</p>
         </div>
 
         <p className="text-lg font-semibold">{singleEstate.description}</p>
@@ -27,8 +31,8 @@ const EstatesDetail = () => {
 
         <table className="table table-zebra text-white">
           <tbody>
-          <tr>
-              <td className="text-2xl font-semibold">Overview <HiOutlineMinus/></td>
+            <tr>
+              <td className="text-2xl font-semibold">Overview <HiOutlineMinus /></td>
             </tr>
             <tr>
               <td>Area</td>

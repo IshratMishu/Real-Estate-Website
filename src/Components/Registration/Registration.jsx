@@ -5,6 +5,7 @@ import useAuth from "../../Hooks/useAuth";
 import { useState } from "react";
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
+import { Helmet } from "react-helmet-async";
 
 
 const Registration = () => {
@@ -51,6 +52,9 @@ const Registration = () => {
 
     return (
         <div className="hero min-h-screen bg-base-100 mt-28 mb-14">
+            <Helmet>
+                <title>LuxVista - Register</title>
+            </Helmet>
             <div className="hero-content flex flex-col">
                 <div className="text-center">
                     <h1 className="text-3xl font-bold text-primary">Register for Free!</h1>

@@ -26,8 +26,6 @@ const LandSupport = () => {
                 <Link to="/contact"><button className="btn btn-primary font-bold text-lg mt-4">Contact Us</button></Link>
             </div>
 
-
-
             <div className="w-auto">
                 <div data-aos="fade-up" data-aos-duration="3000" className="relative lg:w-[450px] md:w-80 h-72">
                     <img className='absolute top-5 left-0 md:left-5 rounded-xl shadow-gray-400 shadow-lg' src="/src/assets/1.jpg" alt="" />

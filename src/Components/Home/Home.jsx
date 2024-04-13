@@ -8,6 +8,7 @@ import { PiDotsThreeOutlineFill } from "react-icons/pi";
 import 'animate.css';
 import LandSupport from "../../Pages/LandSupport";
 import About from "../../Pages/About";
+import { Helmet } from "react-helmet-async";
 
 
 const Home = () => {
@@ -25,6 +26,9 @@ const Home = () => {
 
     return (
         <div className="mt-24 font-poppins">
+            <Helmet>
+                <title>LuxVista - Home</title>
+            </Helmet>
             <Banner></Banner>
             <About></About>
             <div className="mt-32">
