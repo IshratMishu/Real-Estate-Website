@@ -11,6 +11,7 @@ const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
 const AuthProvider = ({ children }) => {
+    const [reload, setReload] = useState(false);
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -69,7 +70,7 @@ const AuthProvider = ({ children }) => {
             }
         });
         return () => unsubscribe();
-    }, []);
+    }, [reload]);
 
 
     const authInfo = {
@@ -80,7 +81,8 @@ const AuthProvider = ({ children }) => {
         githubLogin,
         logOut,
         user,
-        profileUpdate
+        profileUpdate,
+        setReload
     }
 
     return (
