@@ -1,6 +1,6 @@
 # Website Name: LuxVista
 
-***Live Site URL:***
+**Live Site URL:**
 
 Currently, two official plugins are available:
 
