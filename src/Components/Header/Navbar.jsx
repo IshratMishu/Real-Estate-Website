@@ -44,28 +44,26 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-
                 {
-                    user?.email ? <div className="dropdown dropdown-end">
+                    user?.email ? 
+                    <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full">
-                                <img alt="Tailwind CSS Navbar component" src={user?.photoURL ? user.photoURL : 'https://i.ibb.co/31dsFpW/icon-7797704-640.webp'} />
+                            <div className="w-10 rounded-full cursor-pointer">
+                                <img alt="Tailwind CSS Navbar component" src={user?.photoURL ? user.photoURL : 'https://i.ibb.co/31dsFpW/icon-7797704-640.webp'}/>
                             </div>
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
                             <li>
                                 <a className="justify-between">{user?.displayName || 'User Name'}</a>
                             </li>
                             <li> <Link to='/editProfile'>Edit Profile</Link> </li>
                             <li><a onClick={logOut}>Logout</a></li>
                         </ul>
-                    </div>
+                       </div>
                         :
                         <Link to="/login"><button className="btn btn-primary font-bold">Login</button></Link>
                 }
             </div >
-
-
         </div >
 
     );

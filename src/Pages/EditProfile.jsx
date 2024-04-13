@@ -35,25 +35,20 @@ const ProfileDetails = () => {
         // Update user's profile information
         profileUpdate(formData.name, formData.photoURL)
             .then(() => {
-                // toast.success("Profile updated successfully");
-                // console.log(toast.success);
-                // setReload(true);
-                // navigate("/");
-
                 setReload(true);
                 navigate("/");
             })
     };
 
     return (
-        <div className="container mx-auto mt-28">
+        <div className="container mx-auto mt-28 mb-20 p-4">
             <Helmet>
                 <title>LuxVista - Edit Profile</title>
             </Helmet>
-            <h1 className="text-2xl font-bold mb-5">Edit Profile</h1>
+            <h1 className="text-2xl font-bold mb-5 ">Edit Profile</h1>
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700">Name</label>
+                    <label className="block text-sm font-medium">Name</label>
                     <input
                         type="text"
                         name="name"
@@ -63,7 +58,7 @@ const ProfileDetails = () => {
                     />
                 </div>
                 <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700">Email</label>
+                    <label className="block text-sm font-medium">Email</label>
                     <input
                         type="email"
                         name="email"
@@ -73,7 +68,7 @@ const ProfileDetails = () => {
                     />
                 </div>
                 <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700">Photo URL</label>
+                    <label className="block text-sm font-medium">Photo URL</label>
                     <input
                         type="text"
                         name="photoURL"
@@ -82,7 +77,7 @@ const ProfileDetails = () => {
                         className="mt-1 p-2 border rounded-md w-full"
                     />
                 </div>
-                <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md">Save Changes</button>
+                <button type="submit" className="bg-primary text-black font-bold py-2 px-4 rounded-md">Save Changes</button>
             </form>
         </div>
     );
