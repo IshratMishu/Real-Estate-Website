@@ -11,7 +11,7 @@ Website:**
 
 - **Streamlined Navigation:**  This website features exclusive access routes, including **View Property** and **Gallery** , accessible only to signed-in users. Additionally, two 404 error routes, **Contact Us** and **About** , ensure smooth navigation. Engage effortlessly with our intuitive banner buttons **View in Gallery** & **Read Blogs** for seamless redirection to your desired destinations.
 
-- Interactive Virtual Tours: The website offers interactive 3D virtual tours or immersive video walkthroughs of select properties, allowing users to explore every room and detail from the comfort of their own home. Virtual tours provide a realistic and engaging experience for potential buyers.
+- **User Profile Management:** Registration on the website is easy and free! Users can also log in using Google or GitHub account. Once logged in, they'll see their profile picture by default. When users hover over their profile picture, they will see options to view their **username**, **edit profile**, and **logout**. To change their Name or Photo, users simply need to visit the **edit profile page**. It's that simple!
 
 - **Exclusive Property Listings:** The website showcases a curated selection of luxury properties, including prestigious estates, waterfront mansions, penthouses, and private islands. Each listing includes comprehensive details, professional photography, and detailed descriptions highlighting unique features and amenities. By clicking **View Property** button, you gain access to detailed information about the property.
 
