@@ -2,7 +2,7 @@
 
 **Live Site URL:**
 
-# Website Category: LuxVista featuring a curated selection of luxury properties including Penthouses, Beachfront Residences, Resorts, Private Islands, Villas, and Mansions.
+# Website Category: ***LuxVista featuring a curated selection of luxury properties including Penthouses, Beachfront Residences, Resorts, Private Islands, Villas, and Mansions.***
 
 **Features and Characteristics of my
 Website:**
