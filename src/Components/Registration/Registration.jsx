@@ -33,7 +33,7 @@ const Registration = () => {
             setShowModal(true);
             setTimeout(() => {
                 setShowModal(false);
-                navigate('/login');
+                navigate('/');
             }, 2000);
         }
 

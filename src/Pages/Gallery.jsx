@@ -1,13 +1,14 @@
 import 'animate.css';
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
 import { Pagination } from 'swiper/modules';
 import { Helmet } from 'react-helmet-async';
+import luxury1 from '../assets/facade-modern-building-with-geometric-windows-curved-walls_181624-16998.jpg'
+import luxury2 from '../assets/pexels-keegan-checks-19199133.jpg'
+import luxury3 from '../assets/modern-style-house-exterior-with-terrace_114579-2229.jpg'
+import luxury4 from '../assets/pool-hammocks_1203-141.jpg'
 
 
 
@@ -46,19 +47,19 @@ const Gallery = () => {
                 </SwiperSlide>
                 <SwiperSlide className='text-center bg-slate-50 text-lg flex justify-center items-center animate__animated animate__bounceInDown'>
                     <p className='text-black text-sm font-medium'>Exterior shot of a luxurious mansion surrounded by lush landscaping and scenic views.</p>
-                    <img className='block h-full w-full object-cover' src="/src/assets/facade-modern-building-with-geometric-windows-curved-walls_181624-16998.jpg" alt="" />
+                    <img className='block h-full w-full object-cover' src={luxury1} alt="" />
                 </SwiperSlide>
                 <SwiperSlide className='text-center bg-slate-50 text-lg flex justify-center items-center animate__animated animate__bounceInUp'>
                     <p className='text-black text-sm font-medium'>Enjoy resort-style amenities in your own private oasis.</p>
-                    <img className='block h-full w-full object-cover' src="/src/assets/pexels-keegan-checks-19199133.jpg" alt="" />
+                    <img className='block h-full w-full object-cover' src={luxury2} alt="" />
                 </SwiperSlide>
                 <SwiperSlide className='text-center bg-slate-50 text-lg flex justify-center items-center'>
                     <p className='text-black text-sm font-medium'>Aerial view of a luxurious villa featuring outdoor lounge area, and manicured gardens.</p>
-                    <img className='block h-full w-full object-cover' src="/src/assets/modern-style-house-exterior-with-terrace_114579-2229.jpg" alt="" />
+                    <img className='block h-full w-full object-cover' src={luxury3} alt="" />
                 </SwiperSlide>
                 <SwiperSlide className='text-center bg-slate-50 text-lg flex justify-center items-center'>
                     <p className='text-black text-sm font-medium'>Immerse yourself in sophistication and elegance at this exclusive address.</p>
-                    <img className='block h-full w-full object-cover' src="/src/assets/pool-hammocks_1203-141.jpg" alt="" />
+                    <img className='block h-full w-full object-cover' src={luxury4} alt="" />
                 </SwiperSlide>
             </Swiper>
 

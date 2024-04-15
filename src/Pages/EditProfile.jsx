@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 
 
 const ProfileDetails = () => {
-    const { user, profileUpdate, setReload } = useAuth();
+    const { user, updateUserProfile, setReload } = useAuth();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -33,7 +33,7 @@ const ProfileDetails = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Update user's profile information
-        profileUpdate(formData.name, formData.photoURL)
+        updateUserProfile(formData.name, formData.photoURL)
             .then(() => {
                 setReload(true);
                 navigate("/");

@@ -24,15 +24,15 @@ const Login = () => {
     const from = location?.state || "/";
 
     // Function to handle social login
-    const handleSocialLogin = socialProvider => {
-
-        socialProvider()
+    const handleSocialLogin = socialLoginProvider => {
+        socialLoginProvider()
             .then(result => {
                 if (result.user) {
                     navigate(from);
                 }
             })
     }
+
 
     // Function to handle form submission
     const onLogin = data => {
@@ -46,8 +46,8 @@ const Login = () => {
             })
             .catch(() => {
                 setCredentials('Invalid Credentials! Please try again.');
-            });
-    };
+            })
+    }
 
     return (
         <div className="hero min-h-screen bg-base-100 mt-28 mb-14">

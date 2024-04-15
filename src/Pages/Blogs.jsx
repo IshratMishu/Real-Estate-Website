@@ -1,4 +1,7 @@
 import { Helmet } from "react-helmet-async";
+import picture1 from '../assets/pexels-photo-1105754.jpeg'
+import picture2 from '../assets/73173bb3c714513fbefd18e58e9bbd8a.jpg'
+import picture3 from '../assets/pexels-max-vakhtbovycn-7061676.jpg'
 
 
 const Blogs = () => {
@@ -13,7 +16,7 @@ const Blogs = () => {
 
             <div className="grid grid-cols-1 gap-10 mt-16">
                 <div className="card card-side bg-base-100 shadow-sm shadow-gray-400 flex flex-col md:flex-row">
-                    <figure className="w-80"><img className="rounded-xl" src="/src/assets/pexels-photo-1105754.jpeg" alt="" /></figure>
+                    <figure className="w-80"><img className="rounded-xl" src={picture1} alt="" /></figure>
                     <div className="card-body">
                         <small>March 12, 2024</small>
                         <h2 className="card-title text-white animate__animated animate__fadeInLeft">Seller’s Guide</h2>
@@ -25,7 +28,7 @@ const Blogs = () => {
                 </div>
 
                 <div className="card card-side bg-base-100 shadow-sm shadow-gray-400 flex flex-col md:flex-row">
-                    <figure className="w-80"><img className="rounded-xl" src="/src/assets/73173bb3c714513fbefd18e58e9bbd8a.jpg" alt="" /></figure>
+                    <figure className="w-80"><img className="rounded-xl" src={picture2} alt="" /></figure>
                     <div className="card-body">
                         <small>January 20, 2024</small>
                         <h2 className="card-title text-white animate__animated animate__fadeInLeft">Reasons to sell before New Year</h2>
@@ -37,7 +40,7 @@ const Blogs = () => {
                 </div>
 
                 <div className="card card-side bg-base-100 shadow-sm shadow-gray-400 flex flex-col md:flex-row">
-                    <figure className="w-80"><img className="rounded-xl" src="/src/assets/pexels-max-vakhtbovycn-7061676.jpg" alt="" /></figure>
+                    <figure className="w-80"><img className="rounded-xl" src={picture3} alt="" /></figure>
                     <div className="card-body">
                         <small>December 27, 2023</small>
                         <h2 className="card-title text-white animate__animated animate__fadeInLeft">What to look for in an agent</h2>

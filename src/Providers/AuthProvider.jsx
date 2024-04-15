@@ -23,13 +23,13 @@ const AuthProvider = ({ children }) => {
     }
 
     // update user profile
-    const profileUpdate = (name, photo) => {
+    const updateUserProfile = (name, photo) => {
         setLoading(true);
         return updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: photo
         })
-    } 
+    }
 
 
     // sign in user
@@ -49,7 +49,7 @@ const AuthProvider = ({ children }) => {
         setLoading(true);
         return signInWithPopup(auth, githubProvider)
     }
-    
+
 
     // logout
     const logOut = () => {
@@ -64,7 +64,7 @@ const AuthProvider = ({ children }) => {
                 setUser(user);
                 setLoading(false);
             }
-             else {
+            else {
                 setUser(null);
                 setLoading(false);
             }
@@ -81,8 +81,9 @@ const AuthProvider = ({ children }) => {
         githubLogin,
         logOut,
         user,
-        profileUpdate,
-        setReload
+        updateUserProfile,
+        setReload,
+        setUser
     }
 
     return (

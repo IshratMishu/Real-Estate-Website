@@ -3,6 +3,8 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import photo1 from '../assets/1.jpg'
+import photo2 from '../assets/2.jpg'
 
 const LandSupport = () => {
     useEffect(() => {
@@ -28,12 +30,12 @@ const LandSupport = () => {
 
             <div className="w-auto">
                 <div data-aos="fade-up" data-aos-duration="3000" className="relative lg:w-[450px] md:w-80 h-72">
-                    <img className='absolute top-5 left-0 md:left-5 rounded-xl shadow-gray-400 shadow-lg' src="/src/assets/1.jpg" alt="" />
+                    <img className='absolute top-5 left-0 md:left-5 rounded-xl shadow-gray-400 shadow-lg' src={photo1} alt="" />
                 </div>
                 <div data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="1500" className="relative lg:w-[420px] h-72">
-                    <img className='absolute lg:right-10 md:right-5 rounded-xl shadow-gray-400 shadow-lg' src="/src/assets/2.jpg" alt="" />
+                    <img className='absolute lg:right-10 md:right-5 rounded-xl shadow-gray-400 shadow-lg' src={photo2} alt="" />
                 </div>
             </div>
         </div>
