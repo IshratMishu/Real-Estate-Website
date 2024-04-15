@@ -6,6 +6,7 @@ import useAuth from "../../Hooks/useAuth";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 
+
 const Login = () => {
     const { signInUser, googleLogin, githubLogin } = useAuth();
     const [credentials, setCredentials] = useState("");
@@ -33,7 +34,7 @@ const Login = () => {
             })
     }
 
-
+      
     // Function to handle form submission
     const onLogin = data => {
         const { email, password } = data;
@@ -48,6 +49,7 @@ const Login = () => {
                 setCredentials('Invalid Credentials! Please try again.');
             })
     }
+
 
     return (
         <div className="hero min-h-screen bg-base-100 mt-28 mb-14">
@@ -71,7 +73,7 @@ const Login = () => {
                 </div>
 
                 <div className="divider">or</div>
-
+    
                 <div className="card shrink-0 w-full max-w-sm shadow-md shadow-gray-400 bg-base-100">
                     <form className="card-body" onSubmit={handleSubmit(onLogin)}>
                         <div className="form-control">
@@ -92,7 +94,7 @@ const Login = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button onClick={() => handleSocialLogin} className="btn btn-primary font-bold">Login</button>
+                            <button onClick={() => handleSocialLogin} className="btn btn-primary font-bold" >Login</button>
                         </div>
                         {
                             credentials && <small className="text-secondary">{credentials}</small>

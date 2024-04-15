@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet-async";
 
 
 const Registration = () => {
-    const { createUser, updateUserProfile } = useAuth();
+    const { createUser, updateUserProfile, setReload } = useAuth();
     const [passwordError, setPasswordError] = useState('');
     const [passwordSuccess, setPasswordSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -23,7 +23,7 @@ const Registration = () => {
 
 
     const onSubmit = (data) => {
-        const { email, password, image, fullName } = data;
+        const { email, password, name, photo } = data;
 
         if (!/(?=.*[A-Z])(?=.*[a-z]).{6,}/.test(password)) {
             setPasswordError('Password must contain at least one uppercase letter (A-Z), one lowercase letter (a-z), and be at least 6 characters long.');
@@ -33,7 +33,6 @@ const Registration = () => {
             setShowModal(true);
             setTimeout(() => {
                 setShowModal(false);
-                navigate('/');
             }, 2000);
         }
 
@@ -41,8 +40,12 @@ const Registration = () => {
         //create user and update profile
         createUser(email, password)
             .then(() => {
-                updateUserProfile(fullName, image)
-            });
+                updateUserProfile(name, photo)
+                    .then(() => {
+                        setReload(true);
+                        navigate("/");
+                    })
+            })
     };
 
 
@@ -93,7 +96,7 @@ const Registration = () => {
                             </span>
                             {errors.password && <span className="text-secondary">This field is required</span>}
                             {
-                                passwordError && <p className="text-secondary">{passwordError}</p>
+                                passwordError && <small className="text-secondary">{passwordError}</small>
                             }
                         </div>
                         <div className="form-control mt-6">

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer md:flex md:justify-between max-w-6xl mx-auto">
                 <aside>
                     <p className="text-4xl font-bold">LuxVista</p>
-                    <p>Providing reliable tech since 1992</p>
+                    <p>Providing reliable estates since 1992</p>
                     <p>Copyright © 2024 - All right reserved</p>
                 </aside>
                 <nav>
