@@ -10,13 +10,13 @@ const Blogs = () => {
             <Helmet>
                 <title>LuxVista - Blogs</title>
             </Helmet>
-            <div className="mx-auto max-w-3xl">
+            <div className="mx-auto max-w-3xl p-3">
                 <p className="text-center text-white animate__animated animate__fadeInDown">Welcome to our blog, your go-to destination for all things real estate and beyond. Join us as we explore the exciting world of real estate together and unlock the keys to your dream home. Our blog has something interesting to know for everyone.</p>
             </div>
 
-            <div className="grid grid-cols-1 gap-10 mt-16">
+            <div className="grid grid-cols-1 gap-10 mt-16 p-3">
                 <div className="card card-side bg-base-100 shadow-sm shadow-gray-400 flex flex-col md:flex-row">
-                    <figure className="w-80"><img className="rounded-xl" src={picture1} alt="" /></figure>
+                    <figure className="w-auto md:w-80"><img className="rounded-xl" src={picture1} alt="" /></figure>
                     <div className="card-body">
                         <small>March 12, 2024</small>
                         <h2 className="card-title text-white animate__animated animate__fadeInLeft">Seller’s Guide</h2>
@@ -28,7 +28,7 @@ const Blogs = () => {
                 </div>
 
                 <div className="card card-side bg-base-100 shadow-sm shadow-gray-400 flex flex-col md:flex-row">
-                    <figure className="w-80"><img className="rounded-xl" src={picture2} alt="" /></figure>
+                    <figure className="w-auto md:w-80"><img className="rounded-xl" src={picture2} alt="" /></figure>
                     <div className="card-body">
                         <small>January 20, 2024</small>
                         <h2 className="card-title text-white animate__animated animate__fadeInLeft">Reasons to sell before New Year</h2>
@@ -40,7 +40,7 @@ const Blogs = () => {
                 </div>
 
                 <div className="card card-side bg-base-100 shadow-sm shadow-gray-400 flex flex-col md:flex-row">
-                    <figure className="w-80"><img className="rounded-xl" src={picture3} alt="" /></figure>
+                    <figure className="w-auto md:w-80"><img className="rounded-xl" src={picture3} alt="" /></figure>
                     <div className="card-body">
                         <small>December 27, 2023</small>
                         <h2 className="card-title text-white animate__animated animate__fadeInLeft">What to look for in an agent</h2>

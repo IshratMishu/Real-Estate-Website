@@ -38,7 +38,7 @@ const Home = () => {
                 </div>
                 <p className="px-4"><PiDotsThreeOutlineFill className="text-3xl text-gray-300" /></p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10 ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5 mt-10 p-4">
                 {loader ? (
                     <span className="loading loading-spinner loading-lg ml-40 lg:ml-[550px] md:ml-96"></span>
                 )

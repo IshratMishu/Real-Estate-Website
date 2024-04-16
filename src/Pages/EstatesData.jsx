@@ -8,7 +8,7 @@ const EstatesData = ({ estate }) => {
 
 
   return (
-    <div className="card glass shadow-gray-400 shadow-md">
+    <div className="card glass shadow-gray-400 shadow-md ">
       <figure className="w-auto relative"><img src={image} alt="car!" />
         <div className="badge badge-secondary text-white badge-lg p-4 absolute right-5 top-14">{status}</div>
       </figure>

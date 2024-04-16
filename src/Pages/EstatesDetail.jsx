@@ -12,7 +12,7 @@ const EstatesDetail = () => {
   const singleEstate = estates.find(singleEstate => singleEstate.id === idInt);
 
   return (
-    <div className="card bg-base-100 shadow-xl mt-28">
+    <div className="card bg-base-100 shadow-xl mt-28 p-2">
       <Helmet>
         <title>LuxVista - Property Details</title>
       </Helmet>
