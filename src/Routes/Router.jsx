@@ -11,43 +11,43 @@ import PrivateRoutes from "./PrivateRoutes";
 import EditProfile from "../Pages/EditProfile";
 
 const Router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Root></Root>,
-      errorElement: <ErrorPage></ErrorPage>,
-      children: [
-        {
-          path: "/",
-          element: <Home></Home>,
-          loader: () => fetch('/luxuryEstates.json')
-        },
-        {
-          path: "/luxuryEstates/:id",
-          element: <PrivateRoutes><EstatesDetail></EstatesDetail></PrivateRoutes>,
-          loader: () => fetch('/luxuryEstates.json')
-        },
-        {
-          path: "/gallery",
-          element: <PrivateRoutes><Gallery></Gallery></PrivateRoutes>
-        },
-        {
-          path: "/blogs",
-          element: <Blogs></Blogs>
-        },
-        {
-          path: "/login",
-          element: <Login></Login>
-        },
-        {
-          path: "/registration",
-          element: <Registration></Registration>
-        },
-        {
-          path: "/editProfile",
-          element: <PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>
-        }
-      ],
-    },
-  ]);
+  {
+    path: "/",
+    element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch('/luxuryEstates.json')
+      },
+      {
+        path: "/luxuryEstates/:id",
+        element: <PrivateRoutes><EstatesDetail></EstatesDetail></PrivateRoutes>,
+        loader: () => fetch('/luxuryEstates.json')
+      },
+      {
+        path: "/gallery",
+        element: <PrivateRoutes><Gallery></Gallery></PrivateRoutes>
+      },
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/registration",
+        element: <Registration></Registration>
+      },
+      {
+        path: "/updateProfile",
+        element: <PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>
+      }
+    ],
+  },
+]);
 
 export default Router;

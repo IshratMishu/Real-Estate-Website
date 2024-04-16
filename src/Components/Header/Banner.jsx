@@ -1,19 +1,19 @@
 
-
 import mansion from '../../assets/mansion1.jpeg'
 import sat from '../../assets/123.jpg'
 import era from '../../assets/house-2469110_1280.jpg'
+import { Link } from 'react-router-dom'
+
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './styles.css';
-
-
 import { Autoplay, Parallax, Pagination, Navigation } from 'swiper/modules';
-import { Link } from 'react-router-dom';
+
+
+
 const Banner = () => {
   return (
     <>
@@ -38,7 +38,7 @@ const Banner = () => {
         <div
           slot="container-start" className="parallax-bg" data-swiper-parallax="-23%"></div>
         <SwiperSlide style={{
-          backgroundImage: `url(${sat})`,
+          backgroundImage: `url(${sat})`
         }}>
           <div className="title font-medium text-lg md:text-4xl" data-swiper-parallax="-300" >
             Modern Luxury Penthouse Living

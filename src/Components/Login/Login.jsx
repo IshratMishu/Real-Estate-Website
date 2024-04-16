@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import useAuth from "../../Hooks/useAuth";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
@@ -29,12 +31,15 @@ const Login = () => {
         socialLoginProvider()
             .then(result => {
                 if (result.user) {
+                    toast.success('Login Successful!', {
+                        autoClose: 2000
+                    });
                     navigate(from);
                 }
             })
     }
 
-      
+
     // Function to handle form submission
     const onLogin = data => {
         const { email, password } = data;
@@ -42,6 +47,9 @@ const Login = () => {
         signInUser(email, password)
             .then((result) => {
                 if (result.user) {
+                    toast.success('Login Successful!', {
+                        autoClose: 2000
+                    });
                     navigate(from);
                 }
             })
@@ -73,7 +81,7 @@ const Login = () => {
                 </div>
 
                 <div className="divider">or</div>
-    
+
                 <div className="card shrink-0 w-full max-w-sm shadow-md shadow-gray-400 bg-base-100">
                     <form className="card-body" onSubmit={handleSubmit(onLogin)}>
                         <div className="form-control">

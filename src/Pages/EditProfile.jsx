@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import useAuth from "../Hooks/useAuth";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ProfileDetails = () => {
@@ -36,6 +38,9 @@ const ProfileDetails = () => {
         updateUserProfile(formData.name, formData.photoURL)
             .then(() => {
                 setReload(true);
+                toast.success('Profile Updated Successfully!', {
+                    autoClose: 1000
+                });
                 navigate("/");
             })
     };
@@ -43,9 +48,9 @@ const ProfileDetails = () => {
     return (
         <div className="container mx-auto mt-28 mb-20 p-4">
             <Helmet>
-                <title>LuxVista - Edit Profile</title>
+                <title>LuxVista - Update Profile</title>
             </Helmet>
-            <h1 className="text-2xl font-bold mb-5 ">Edit Profile</h1>
+            <h1 className="text-2xl font-bold mb-5 ">Update Profile</h1>
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label className="block text-sm font-medium">Name</label>
