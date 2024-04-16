@@ -5,7 +5,7 @@ import man from '../assets/young-successful-businessman-posing-with-crossed-arms
 const About = () => {
     return (
         <div data-aos="flip-right" className="flex flex-col md:flex-row mt-28">
-            <div className="w-auto md:w-2/5">
+            <div className="w-auto md:w-2/5 m-4">
             <img className="rounded-3xl shadow-gray-400 shadow-md" src={man} alt="" />
             </div>
             <div className="mt-auto w-auto md:w-3/5 lg:mt-32 md:mt-10 space-y-5 p-6">
